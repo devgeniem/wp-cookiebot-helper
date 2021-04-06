@@ -1,0 +1,24 @@
+{
+    "name": "devgeniem/wp-cookiebot-helper",
+    "type": "wordpress-plugin",
+    "license": "MIT",
+    "description": "WordPress plugin for handling Cookiebot consent states",
+    "homepage": "https://geniem.com",
+    "authors": [
+        {
+            "name": "Hermanni Piirainen",
+            "email": "hermanni.piirainen@geniem.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "keywords": [
+        "wordpress", "wp", "plugin"
+    ],
+    "require": {
+        "php": ">=7.1",
+        "composer/installers": ">=v1.7.0"
+    },
+    "autoload": {
+        "psr-4": {"Geniem\\Cookiebot\\": "src/"}
+    }
+}

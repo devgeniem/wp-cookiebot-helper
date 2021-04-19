@@ -55,6 +55,7 @@ class YouTube {
 
     /**
      * Add placeholder markup for YouTube embeds.
+     * The placeholder is hidden by Cookiebot if user has given consent.
      *
      * @param string $html The embed HTML.
      * @param string $url  The embed URL.
@@ -78,11 +79,6 @@ class YouTube {
 
         // Bail if not a YouTube embed
         if ( ! in_array( $host, $allowed_hosts, true ) ) {
-            return $html;
-        }
-
-        // If required cookie consent is given, return original.
-        if ( $this->cookie_handler->is_cookie_state_accepted( $this->opt_out_type ) ) {
             return $html;
         }
 

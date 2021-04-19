@@ -1,0 +1,67 @@
+# Copyright (C) 2021 Geniem Oy / Hermanni Piirainen
+# This file is distributed under the same license as the Cookiebot Helper plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Cookiebot Helper 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-cookiebot-"
+"helper\n"
+"POT-Creation-Date: 2021-03-31T15:27:55+03:00\n"
+"PO-Revision-Date: 2021-03-31 16:14+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Domain: wp-cookiebot-helper\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Plugin Name of the plugin
+msgid "Cookiebot Helper"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://github.com/devgeniem/wp-cookiebot-helper"
+msgstr ""
+
+#. Description of the plugin
+msgid "Helper plugin for handling Cookiebot consent states"
+msgstr ""
+
+#. Author of the plugin
+msgid "Geniem Oy / Hermanni Piirainen"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://geniem.com"
+msgstr ""
+
+#: src/Utils/ConsentType.php:53
+msgid "necessary cookies"
+msgstr "välttämättömät evästeet"
+
+#: src/Utils/ConsentType.php:54
+msgid "preference cookies"
+msgstr "mieltymysevästeet"
+
+#: src/Utils/ConsentType.php:55
+msgid "statistic cookies"
+msgstr "tilastolliset evästeet"
+
+#: src/Utils/ConsentType.php:56
+msgid "marketing cookies"
+msgstr "markkinointievästeet"
+
+#. translators: 1: The URL to renew cookie consent 2: The consent type
+#: src/Utils/Markup.php:45
+msgid ""
+"Please <a href=\"%1$s\" class=\"cookiebot-helper__link\">accept %2$s</a> to "
+"watch the video."
+msgstr ""
+"Ole hyvä ja <a href=\"%1$s\" class=\"cookiebot-helper__link\">hyväksy %2$s</"
+"a> katsoaksesi videon."
+
+#: src/Utils/Markup.php:66
+msgid "Play video on YouTube (opens in new tab)"
+msgstr "Toista video YouTubessa (aukeaa uuteen välilehteen)"

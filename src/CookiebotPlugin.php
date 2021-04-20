@@ -172,6 +172,8 @@ final class CookiebotPlugin {
         // Get file modification times to enable more dynamic versioning.
         $css_mod_time = file_exists( $this->plugin_path . '/assets/dist/main.css' ) ?
             filemtime( $this->plugin_path . '/assets/dist/main.css' ) : $this->version;
+        $js_mod_time  = file_exists( $this->plugin_path . '/assets/dist/main.js' ) ?
+            filemtime( $this->plugin_path . '/assets/dist/main.js' ) : $this->version;
 
         if ( file_exists( $this->plugin_path . '/assets/dist/main.css' ) ) {
             wp_enqueue_style(
@@ -180,6 +182,15 @@ final class CookiebotPlugin {
                 [],
                 $css_mod_time,
                 'all'
+            );
+        }
+
+        if ( file_exists( $this->plugin_path . '/assets/dist/main.js' ) ) {
+            wp_enqueue_script(
+                'cookiebot-helper-public-js',
+                $this->plugin_uri . '/assets/dist/main.js',
+                [],
+                $js_mod_time
             );
         }
     }

@@ -27,6 +27,8 @@ class YouTube {
 
     /**
      * The cookie handler instance.
+     * 
+     * Not in use currently as server-side parsing is not needed.
      *
      * @var CookieHandler
      */
@@ -34,12 +36,9 @@ class YouTube {
 
     /**
      * Class constructor
-     *
-     * @param CookieHandler $cookie_handler The cookie handler from plugin instance.
      */
-    public function __construct( $cookie_handler ) {
+    public function __construct() {
         $this->opt_out_type   = ConsentType::MARKETING;
-        $this->cookie_handler = $cookie_handler;
         $this->hooks();
     }
 

@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [1.0.1] - 2021-04-20
 
-### Modified
+### Changed
 - Always include the placeholder to avoid non-placeholder version hitting cache.
 - Disable parsing the cookie server-side (for now).
 - Add class to placeholder hiding it initially to avoid content flashing.

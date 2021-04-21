@@ -113,7 +113,12 @@ final class CookiebotPlugin {
      */
     protected function init_handlers() {
         if ( ! \is_admin() ) {
-            $this->cookie_handler = new CookieHandler();
+
+            /*
+                Uncomment the line below when parsing the consent cookie server-side is needed.
+                See README > Notes about caching for more information.
+            */
+            // $this->cookie_handler = new CookieHandler();
 
             $this->handlers = [
                 Handlers\YouTube::class,
@@ -121,7 +126,7 @@ final class CookiebotPlugin {
 
             foreach ( $this->handlers as $handler_class ) {
                 if ( class_exists( $handler_class ) ) {
-                    new $handler_class( $this->cookie_handler );
+                    new $handler_class();
                 }
             }
         }
@@ -172,6 +177,8 @@ final class CookiebotPlugin {
         // Get file modification times to enable more dynamic versioning.
         $css_mod_time = file_exists( $this->plugin_path . '/assets/dist/main.css' ) ?
             filemtime( $this->plugin_path . '/assets/dist/main.css' ) : $this->version;
+        $js_mod_time  = file_exists( $this->plugin_path . '/assets/dist/main.js' ) ?
+            filemtime( $this->plugin_path . '/assets/dist/main.js' ) : $this->version;
 
         if ( file_exists( $this->plugin_path . '/assets/dist/main.css' ) ) {
             wp_enqueue_style(
@@ -180,6 +187,15 @@ final class CookiebotPlugin {
                 [],
                 $css_mod_time,
                 'all'
+            );
+        }
+
+        if ( file_exists( $this->plugin_path . '/assets/dist/main.js' ) ) {
+            wp_enqueue_script(
+                'cookiebot-helper-public-js',
+                $this->plugin_uri . '/assets/dist/main.js',
+                [],
+                $js_mod_time
             );
         }
     }

@@ -20,7 +20,7 @@ class Markup {
      */
     public static function get_wrapper_start( $state = '' ) {
         $class = "cookieconsent-optout-$state";
-        return '<div class="cookiebot-helper ' . \esc_attr( $class ) . '"><div class="cookiebot-helper__wrapper">';
+        return '<div class="cookiebot-helper cookiebot-helper--hidden ' . \esc_attr( $class ) . '"><div class="cookiebot-helper__wrapper">';
     }
 
     /**

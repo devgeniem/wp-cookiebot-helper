@@ -11,3 +11,7 @@ window.addEventListener('CookiebotOnTagsExecuted', e => {
         placeholder.classList.remove(hiddenClass);
     });
 });
+
+window.addEventListener( 'CookiebotOnDialogDisplay', () => {
+    document.getElementById( 'CybotCookiebotDialog' ).focus();
+}, false );

@@ -49,7 +49,7 @@ class YouTube {
      */
     protected function hooks() {
         \add_filter( 'embed_oembed_html', [ $this, 'add_placeholder' ], 10, 2 );
-        \add_filter( 'acf/format_value/type=oembed', [ $this, 'add_placeholder' ], 10, 2 );
+        \add_filter( 'acf/format_value/type=oembed', [ $this, 'add_placeholder' ], 20, 2 );
     }
 
     /**

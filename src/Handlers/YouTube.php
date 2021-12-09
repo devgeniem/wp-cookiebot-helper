@@ -38,7 +38,7 @@ class YouTube {
      * Class constructor
      */
     public function __construct() {
-        $this->opt_out_type   = ConsentType::MARKETING;
+        $this->opt_out_type = ConsentType::MARKETING;
         $this->hooks();
     }
 
@@ -49,7 +49,24 @@ class YouTube {
      */
     protected function hooks() {
         \add_filter( 'embed_oembed_html', [ $this, 'add_placeholder' ], 10, 2 );
-        \add_filter( 'acf/format_value/type=oembed', [ $this, 'add_placeholder' ], 20, 2 );
+        \add_filter( 'acf/format_value/type=oembed', [ $this, 'format_acf_oembed' ], 20, 3 );
+    }
+
+    /**
+     * Get the original video URL and add placeholder.
+     *
+     * @param mixed      $value The field value.
+     * @param int|string $post_id The post ID.
+     * @param array      $field The field array containing all settings.
+     * @return string
+     */
+    public function format_acf_oembed( $value, $post_id, $field ) {
+        if ( function_exists( 'get_field' ) ) {
+            $url = \get_field( $field['name'], $post_id, false );
+            return $this->add_placeholder( $value, $url );
+        }
+
+        return $value;
     }
 
     /**

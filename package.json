@@ -1,6 +1,6 @@
 {
     "name": "wordpress-plugin-cookiebot",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "description": "Helper plugin for handling Cookiebot consent states",
     "private": true,
     "dependencies": {

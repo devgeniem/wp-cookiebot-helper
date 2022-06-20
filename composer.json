@@ -16,7 +16,7 @@
     ],
     "require": {
         "php": ">=7.1",
-        "composer/installers": ">=v1.7.0"
+        "composer/installers": ">=v1.10.0"
     },
     "autoload": {
         "psr-4": {"Geniem\\Cookiebot\\": "src/"}

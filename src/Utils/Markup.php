@@ -71,7 +71,7 @@ class Markup {
          */
         $thumbnail_size = \apply_filters( 'cookiebot_helper_youtube_image_size', 'maxresdefault' );
         $thumbnail_url  = "https://img.youtube.com/vi/$video_id/{$thumbnail_size}.jpg";
-        $thumbnail      = '<img src="' . esc_url( $thumbnail_url ) . '" class="cookiebot-helper-placeholder__thumbnail" alt="">';
+        $thumbnail      = '<img data-cookieconsent="ignore" src="' . esc_url( $thumbnail_url ) . '" class="cookiebot-helper-placeholder__thumbnail" alt="">';
         $content        = '<span class="cookiebot-helper-placeholder__content">' . __( 'Play video on YouTube (opens in new tab)', 'wp-cookiebot-helper' ) . '</span>';
 
         $placeholder  = '<div class="cookiebot-helper-placeholder__wrapper cookiebot-helper-placeholder__wrapper--youtube">';

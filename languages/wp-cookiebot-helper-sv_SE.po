@@ -6,7 +6,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-cookiebot-"
 "helper\n"
 "POT-Creation-Date: 2021-03-31T15:28:41+03:00\n"
-"PO-Revision-Date: 2023-02-01 17:41+0200\n"
+"PO-Revision-Date: 2023-02-06 12:45+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: sv\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #. Plugin Name of the plugin
 msgid "Cookiebot Helper"
-msgstr ""
+msgstr "Cookiebot-hjälpare"
 
 #. Plugin URI of the plugin
 msgid "https://github.com/devgeniem/wp-cookiebot-helper"
@@ -27,7 +27,7 @@ msgstr ""
 
 #. Description of the plugin
 msgid "Helper plugin for handling Cookiebot consent states"
-msgstr ""
+msgstr "Hjälpplugin för hantering av Cookiebot-samtyckestillstånd"
 
 #. Author of the plugin
 msgid "Geniem Oy / Hermanni Piirainen"

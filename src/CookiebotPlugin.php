@@ -112,22 +112,20 @@ final class CookiebotPlugin {
      * @return void
      */
     protected function init_handlers() {
-        if ( ! \is_admin() ) {
 
-            /*
-                Uncomment the line below when parsing the consent cookie server-side is needed.
-                See README > Notes about caching for more information.
-            */
-            // $this->cookie_handler = new CookieHandler();
+        /*
+            Uncomment the line below when parsing the consent cookie server-side is needed.
+            See README > Notes about caching for more information.
+        */
+        // $this->cookie_handler = new CookieHandler();
 
-            $this->handlers = [
-                Handlers\YouTube::class,
-            ];
+        $this->handlers = [
+            Handlers\YouTube::class,
+        ];
 
-            foreach ( $this->handlers as $handler_class ) {
-                if ( class_exists( $handler_class ) ) {
-                    new $handler_class();
-                }
+        foreach ( $this->handlers as $handler_class ) {
+            if ( class_exists( $handler_class ) ) {
+                new $handler_class();
             }
         }
     }

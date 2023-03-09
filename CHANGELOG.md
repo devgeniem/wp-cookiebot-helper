@@ -4,7 +4,8 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-## [youtube-hooks-default-wp] - 2023-02-28
+## [1.1.6] - 2023-03-09
+### Changed
 - Youtube class init by default WP no extra `is_admin()` restriction.
 
 ## [1.1.5] - 2023-02-06

@@ -3,7 +3,7 @@
  * Plugin Name: Cookiebot Helper
  * Plugin URI: https://github.com/devgeniem/wp-cookiebot-helper
  * Description: Helper plugin for handling Cookiebot consent states
- * Version: 1.1.5
+ * Version: 1.1.6
  * Requires PHP: 7.0
  * Author: Geniem Oy / Hermanni Piirainen
  * Author URI: https://geniem.com

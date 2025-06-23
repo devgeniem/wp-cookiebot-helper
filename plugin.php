@@ -2,11 +2,11 @@
 /**
  * Plugin Name: Cookiebot Helper
  * Plugin URI: https://github.com/devgeniem/wp-cookiebot-helper
- * Description: Helper plugin for handling Cookiebot consent states
- * Version: 1.1.6
+ * Description: Helper plugin for handling Cookiebot consent states. Based off of wp.cookiebot-helper and updated to support podcast embeds.
+ * Version: 1.1.7
  * Requires PHP: 7.0
- * Author: Geniem Oy / Hermanni Piirainen
- * Author URI: https://geniem.com
+ * Author: Hion Digital
+ * Author URI: https://www.hiondigital.com/
  * License: GPL v3 or later
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain: wp-cookiebot-helper

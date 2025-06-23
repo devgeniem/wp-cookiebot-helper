@@ -121,6 +121,7 @@ final class CookiebotPlugin {
 
         $this->handlers = [
             Handlers\YouTube::class,
+            Handlers\Podcast::class,
         ];
 
         foreach ( $this->handlers as $handler_class ) {
